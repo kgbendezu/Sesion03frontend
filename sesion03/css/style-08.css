@@ -1,0 +1,41 @@
+p{
+    font-style: italic; /*podria ser NORMAL*/
+   /** font-size: 24px; TAMAÑO DE FUENTE**/
+
+   /** font-size: xx-small; 9px**/
+   /**font-size: xx-small; 10px**/
+   /**font-size: xx-small; 16px**/
+   /**font-size: small; 13px**/
+   /** font-size: medium; 16px - defecto ... medium es una palabra reservada!**/
+    /**font-size: xx-large; /**32px**/
+    /**font-size: x-large; 24px**/
+    font-size: large; /**18px**/
+
+/**text-align: center
+text-align: left
+text-align: right**/
+text-align: justify;
+word-spacing: 7px; /**espacio entre palabras**/
+
+line-height: 21px;
+
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing:  7px; /**espacio entre letras**/
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100; /**PESO(GROSOR) DE FUENTE**/
+    font-style: italic; /**ESTILO DE FUENTE**/
+    text-transform: uppercase;   /**lowercase , capitalize y uppercase.. son propiedades de texto**/
+}
+
+a{
+    /*text-decoration: : line-through; para tachar*/ /**overline**/
+    
+    text-decoration: : none;
+}
