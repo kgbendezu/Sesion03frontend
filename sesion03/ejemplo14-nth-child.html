@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>devmaster</title>
+<style>
+    /* selectores nth-child 
+    clases = .
+    id = #
+    */
+    .selector1 :nth-child(4){
+        color: green;
+    }
+    .selector1 :nth-child(6){
+        color: red;
+    }
+
+    .selector2 :first-child{
+
+        color: tomato;
+    }
+
+    .selector2 :last-child{
+        color: blue;
+    }
+     
+    /* /*pares */
+
+    .selector3 :nth-child(even)
+    {
+        background-color: tomato;
+    }
+
+    /* impares */
+
+    .selector3 :nth-child(odd)
+    {
+        background-color: violet;
+    }
+
+    .selector4 :nth-last-child(4)
+    {
+        color: greenyellow;
+    }
+
+    .selector4 :nth-last-child(3)
+    {
+        color: red;
+    }
+
+    .selector5 p:first-of-type{
+        color: gold;
+    }
+
+    .selector5 p:last-of-type{
+        color: orange;
+    }
+    
+    /* seleccionamos a todos los elementos menos al ultimo */
+
+    .selector5 p:not(:last-child){
+       background-color: red;
+    }
+
+    /* seleccionamos el elemento vacio */
+    .selector3 li:empty {
+        color: green;
+    }
+    
+    .selector6 :first-child::first-line{
+        color: red;
+    }
+
+    .selector6 :first-child::first-letter{
+        font-size: 42px;
+    }
+
+
+</style>
+</head>
+<body>
+    <!-- article.selector$*5 -->
+    <article class="selector1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quasi, nisi delectus asperiores nam, eaque facilis, labore ut adipisci placeat dolorum blanditiis laudantium quae neque. Debitis asperiores assumenda perspiciatis quisquam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quasi, nisi delectus asperiores nam, eaque facilis, labore ut adipisci placeat dolorum blanditiis laudantium quae neque. Debitis asperiores assumenda perspiciatis quisquam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quasi, nisi delectus asperiores nam, eaque facilis, labore ut adipisci placeat dolorum blanditiis laudantium quae neque. Debitis asperiores assumenda perspiciatis quisquam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quasi, nisi delectus asperiores nam, eaque facilis, labore ut adipisci placeat dolorum blanditiis laudantium quae neque. Debitis asperiores assumenda perspiciatis quisquam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quasi, nisi delectus asperiores nam, eaque facilis, labore ut adipisci placeat dolorum blanditiis laudantium quae neque. Debitis asperiores assumenda perspiciatis quisquam!</p>
+    </article>
+    <br>
+    <article class="selector2">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt ab, voluptatem accusantium accusamus blanditiis placeat? Maxime doloribus inventore, architecto voluptas quam dolorum quaerat non tenetur earum similique fugit, amet eum?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt ab, voluptatem accusantium accusamus blanditiis placeat? Maxime doloribus inventore, architecto voluptas quam dolorum quaerat non tenetur earum similique fugit, amet eum?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt ab, voluptatem accusantium accusamus blanditiis placeat? Maxime doloribus inventore, architecto voluptas quam dolorum quaerat non tenetur earum similique fugit, amet eum?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt ab, voluptatem accusantium accusamus blanditiis placeat? Maxime doloribus inventore, architecto voluptas quam dolorum quaerat non tenetur earum similique fugit, amet eum?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt ab, voluptatem accusantium accusamus blanditiis placeat? Maxime doloribus inventore, architecto voluptas quam dolorum quaerat non tenetur earum similique fugit, amet eum?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt ab, voluptatem accusantium accusamus blanditiis placeat? Maxime doloribus inventore, architecto voluptas quam dolorum quaerat non tenetur earum similique fugit, amet eum?</p>
+    </article>
+    <br>
+    <ul class="selector3">
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ea consectetur dolorum similique, velit ratione et laborum eos distinctio vitae illum minima, beatae alias ducimus voluptates possimus deleniti, excepturi magni?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ea consectetur dolorum similique, velit ratione et laborum eos distinctio vitae illum minima, beatae alias ducimus voluptates possimus deleniti, excepturi magni?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ea consectetur dolorum similique, velit ratione et laborum eos distinctio vitae illum minima, beatae alias ducimus voluptates possimus deleniti, excepturi magni?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ea consectetur dolorum similique, velit ratione et laborum eos distinctio vitae illum minima, beatae alias ducimus voluptates possimus deleniti, excepturi magni?</li>
+        <li></li>
+<br>
+    </ul>
+    <ol class="selector4">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit debitis possimus reprehenderit velit saepe itaque, corrupti in rerum dignissimos. Enim, vitae? Non quae reiciendis nisi, cupiditate quos excepturi dolore.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit debitis possimus reprehenderit velit saepe itaque, corrupti in rerum dignissimos. Enim, vitae? Non quae reiciendis nisi, cupiditate quos excepturi dolore.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit debitis possimus reprehenderit velit saepe itaque, corrupti in rerum dignissimos. Enim, vitae? Non quae reiciendis nisi, cupiditate quos excepturi dolore.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit debitis possimus reprehenderit velit saepe itaque, corrupti in rerum dignissimos. Enim, vitae? Non quae reiciendis nisi, cupiditate quos excepturi dolore.</li>
+    </ol>
+    <br>
+    <article class="selector5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eveniet eligendi quibusdam tempora, ab odio ducimus dignissimos aut, rerum cumque aliquid ipsam expedita earum error tenetur ea a obcaecati! Quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eveniet eligendi quibusdam tempora, ab odio ducimus dignissimos aut, rerum cumque aliquid ipsam expedita earum error tenetur ea a obcaecati! Quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eveniet eligendi quibusdam tempora, ab odio ducimus dignissimos aut, rerum cumque aliquid ipsam expedita earum error tenetur ea a obcaecati! Quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eveniet eligendi quibusdam tempora, ab odio ducimus dignissimos aut, rerum cumque aliquid ipsam expedita earum error tenetur ea a obcaecati! Quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eveniet eligendi quibusdam tempora, ab odio ducimus dignissimos aut, rerum cumque aliquid ipsam expedita earum error tenetur ea a obcaecati! Quia.</p>
+    </article>
+    <br><br>
+    <article class="selector6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt doloremque quidem officiis temporibus beatae eaque obcaecati repudiandae repellat perspiciatis voluptatibus, ea animi molestias commodi rerum possimus, alias hic consequatur natus?Soluta vel sapiente, iste dignissimos cumque voluptatem error. Voluptatem quidem natus, corrupti quo fugit officia ex recusandae error, ea aliquid esse. In, architecto incidunt rerum vel sunt nemo dolore quas!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt doloremque quidem officiis temporibus beatae eaque obcaecati repudiandae repellat perspiciatis voluptatibus, ea animi molestias commodi rerum possimus, alias hic consequatur natus?Soluta vel sapiente, iste dignissimos cumque voluptatem error. Voluptatem quidem natus, corrupti quo fugit officia ex recusandae error, ea aliquid esse. In, architecto incidunt rerum vel sunt nemo dolore quas!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt doloremque quidem officiis temporibus beatae eaque obcaecati repudiandae repellat perspiciatis voluptatibus, ea animi molestias commodi rerum possimus, alias hic consequatur natus?Soluta vel sapiente, iste dignissimos cumque voluptatem error. Voluptatem quidem natus, corrupti quo fugit officia ex recusandae error, ea aliquid esse. In, architecto incidunt rerum vel sunt nemo dolore quas!</p>
+    </article>
+
+</body>
+</html>
